@@ -93,6 +93,9 @@ document.addEventListener('DOMContentLoaded',() =>{
                         console.info(x.alt);
                             if(!(x.className === "selected")){
                                 x.setAttribute("class", "selected");
+                                if(!(selectedCard === "")){
+                                    document.getElementById(selectedCard).setAttribute("class","");
+                                }
                                 selectedCard = x.alt;
                                 console.info(selectedCard + " selected");
                             }else {
