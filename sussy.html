@@ -44,28 +44,29 @@
         </style>
         <script src = "sus.js"></script>
     </head>
-    <body style = "font-family: 'trebuchet ms'; background: rgb(126, 165, 255)">
-        <h1 style = "text-align: center;">Let's play 接龙！(Jie Long)</h1>
+    <body style="font-family: 'trebuchet ms'; background: rgb(126, 165, 255)">
+        <h1 style="text-align: center;">Let's play 接龙！(Jie Long)</h1>
         <h3>NOTICE: This game can be 100% simulated by entering the number of human players as 0. </h3>
-        <div id = "settings">
-        <p>Input Number Of Human Players(Less than or equal to 4)</p>
-        <input id = "players" type = "number">
-        <select name="history log" id="results" style = "float: right; position: absolute; right: 200px">
-            <option>Click Start!</option>
-        </select>
-        <button id = "start">Start</button>
+        <a href="https://youtu.be/Hc0DQhSVYJ4">Rules</a>
+        <div id="settings">
+            <p>Input Number Of Human Players(Less than or equal to 4)</p>
+            <input id="players" type="number">
+            <select name="history log" id="results" style="float: right; position: absolute; right: 200px">
+                <option>Click Start!</option>
+            </select>
+            <button id="start">Start</button>
         </div>
 
-        <div id = "2" class = "board" style = "height: 50px; width: 1000px"></div>
-        <div id = "middle" class = "board" style = "float: center">
-            <div id = "1" class = "board" style = "height: 400px; width: 50px; display: inline-block; float: left"></div>
-            <div id = "center" class = "board" style = "height: 400px; width: 1330px; display: inline-block"></div>
-            <div id = "3" class = "board" style = "height: 400px; width: 50px; display: inline-block; float: right"></div>
+        <div id="2" class="board" style="height: 50px; width: 1000px"></div>
+        <div id="middle" class="board" style="float: center">
+            <div id="1" class="board" style="height: 400px; width: 50px; display: inline-block; float: left"></div>
+            <div id="center" class="board" style="height: 400px; width: 1330px; display: inline-block"></div>
+            <div id="3" class="board" style="height: 400px; width: 50px; display: inline-block; float: right"></div>
         </div>
-        <div id = "0" class = "board" style = "height: 50px; width: 1000px"></div>
-        <div id = "buttons" class = "board" style = "width: 800px; position: relative; height: 100px"></div>
-        <div id = "rules" style = "position: relative;">
-        <!-- <p>RULES:</p>
+        <div id="0" class="board" style="height: 50px; width: 1000px"></div>
+        <div id="buttons" class="board" style="width: 800px; position: relative; height: 100px"></div>
+        <div id="rules" style="position: relative;">
+            <!-- <p>RULES:</p>
         <p>General Goal is to burn the LOWEST value cards possible.</p>
         <p>On each turn you can add to a 'stack' of cards in the center or START A NEW stack by placing a SEVEN. </p>
         <p>Person with the seven of spades will start the first stack.</p>
